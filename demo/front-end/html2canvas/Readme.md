@@ -1,0 +1,1 @@
+About html2canvas
