@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>loading_use</title>
+    <link rel="stylesheet" href="loading.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <center>
+            <button onclick="submit()">loading</button>
+            <button onclick="submit_jquery()">loading_jquery</button>
+        </center>
+    </div>
+</body>
+
+</html>
+
+<script src="add_loading.js"></script>
+<script src="add_loading_jquery.js"></script>
+<script type="text/javascript">
+    function submit() {
+        addLoading();
+        setTimeout(() => {
+            window.location.href = 'next.html';
+        }, 6000)
+
+    }
+    function submit_jquery() {
+        addLoadingJquery();
+        setTimeout(() => {
+            window.location.href = 'next.html';
+        }, 6000)
+
+    }
+</script>
